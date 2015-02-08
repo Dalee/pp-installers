@@ -2,7 +2,7 @@
     "name": "pp/installers",
     "type": "composer-plugin",
     "extra": {
-        "class": "PP\\Composer\\Installer"
+        "class": "PP\\Composer\\InstallerPlugin"
     },
     "homepage": "http://git.dalee.ru/pp/installers",
     "description": "Dalee Related Composer Library Installer",
