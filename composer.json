@@ -1,0 +1,22 @@
+{
+    "name": "pp/installers",
+    "type": "composer-plugin",
+    "extra": {
+        "class": "PP\\Installers\\Installer"
+    },
+    "homepage": "http://git.dalee.ru/pp/installers",
+    "description": "Dalee Related Composer Library Installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexej Yaroshevich",
+            "email": "alex@qfox.ru"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "1.0.0"
+    },
+    "autoload": {
+        "psr-0": {"PP\\Composer": "src/"}
+    }
+}
