@@ -33,6 +33,10 @@ class Installer extends LibraryInstaller {
      * {@inheritDoc}
      */
     public function supports($packageType) {
-        return 'pp-plugin' === $packageType;
+        $result = false;
+        $result = $result || ('pp-plugin' === $packageType);
+        $result = $result || ('pp-core' === $packageType);
+
+        return $result;
     }
 }
