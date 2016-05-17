@@ -10,8 +10,10 @@ class Installer extends LibraryInstaller {
      * {@inheritDoc}
      */
     public function getInstallPath(PackageInterface $package) {
+        # TODO: too-much hardcode there, should be cleared up
+
         $name = $package->getPrettyName();
-        if ($name === 'dalee/libpp5') {
+        if ($name === 'pp/core') {
             return 'libpp';
         }
 
