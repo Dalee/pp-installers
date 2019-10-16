@@ -1,10 +1,10 @@
 {
-    "name": "pp/installers",
+    "name": "dalee/pp-installers",
     "type": "composer-plugin",
     "extra": {
         "class": "PP\\Composer\\InstallerPlugin"
     },
-    "homepage": "http://git.dalee.ru/pp/installers",
+    "homepage": "https://git.dalee.ru/pp/installers",
     "description": "Dalee Related Composer Library Installer",
     "license": "MIT",
     "authors": [
