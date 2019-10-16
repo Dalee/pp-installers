@@ -13,16 +13,18 @@ class Installer extends LibraryInstaller {
         # TODO: too-much hardcode there, should be cleared up
 
         $name = $package->getPrettyName();
-        if ($name === 'pp/core') {
+        if ($name === 'pp/core' || $name === 'dalee/pp-core') {
             return 'libpp';
         }
 
+        $name = str_replace(['dalee/', '/'], ['', '-'], $name);
         $prefix = substr($name, 0, 3);
-        if ('pp/' !== $prefix) {
+
+        if ('pp-' !== $prefix) {
             throw new \InvalidArgumentException(
                 'Unable to install plugin. PP plugins '
-                .'should always start their package name with '
-                .'"pp/"'
+                .'should always start their package name with prefix'
+                .'"pp-" or be in group "pp/"'
             );
         }
 
